@@ -1,0 +1,183 @@
+%-------------------------
+% Rover Resume - Fancy Template
+% Link: https://github.com/subidit/rover-resume
+%------------------------
+
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{inter} % https://tug.org/FontCatalogue/
+\renewcommand*\familydefault{\sfdefault}
+
+\usepackage{geometry}
+\geometry{
+a4paper,
+top=1.8cm,
+bottom=1in,
+left=2.5cm,
+right=2.5cm
+}
+
+\setcounter{secnumdepth}{0} % remove section numbering
+\pdfgentounicode=1 % make ATS friendly
+
+\usepackage{enumitem}
+\setlist[itemize]{
+    noitemsep,
+    left=0pt..1.5em
+}
+\setlist[description]{itemsep=0pt}
+\setlist[enumerate]{align=left}
+
+\usepackage[dvipsnames]{xcolor}
+% \usepackage[dvipsnames, svgnames, x11names]{xcolor} 
+% \usepackage[dvipsnames]{xcolor} % xcolor.pdf Sec.4 Colors by Name
+\colorlet{icnclr}{gray}
+% \colorlet [⟨type⟩]{⟨name⟩}[⟨num model⟩]{⟨color ⟩}
+% \definecolor[⟨type⟩]{⟨name⟩}{⟨model-list⟩}{⟨spec-list⟩}
+
+
+\usepackage{titlesec}
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+% \titlespacing{\section}{0pt}{*3}{*1}
+\titlespacing{\subsection}{5pt}{*0}{*0}
+\titlespacing{\subsubsection}{5pt}{*0}{*0}
+% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]  
+\titleformat{\section}{\color{cyan}\large\fontseries{black}\selectfont\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
+\titleformat{\subsection}{\large\fontseries{semibold}\selectfont}{}{}{\rvs}
+\titleformat{\subsubsection}{\small\fontseries{light}\selectfont}{}{}{}
+
+
+\newif\ifRemVS % remove vspace between \section & \subsection
+\newcommand{\rvs}{
+    \ifRemVS
+        \vspace{-1.5ex}
+    \fi
+    \global\RemVSfalse
+}
+
+
+\usepackage{fontawesome5}
+
+\usepackage[bookmarks=false]{hyperref} % [imp!]
+\hypersetup{ % https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+    colorlinks=true,
+    urlcolor=cyan,
+    pdftitle={JannineForstResume2024}}
+
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}	
+\fancyhf{}							
+% \cfoot{\color{darkgray} Jannine Forst R\'esum\'e -- Page \thepage{} of \totalpages}
+\cfoot{\color{darkgray} Jannine Forst -- Page \thepage{} of \totalpages}
+
+\usepackage[backend=biber, natbib,  citestyle=authoryear,style=apa,sorting=none,url=true,giveninits=true,isbn=false,eprint=false,
+uniquename=false,maxbibnames=20]{biblatex}
+
+\setlength\bibitemsep{\baselineskip}
+
+\addbibresource{publications.bib}
+
+
+\begin{document}
+
+%== HEADER ==%
+\begin{center}
+    {\fontsize{36}{36}\selectfont\interthin Jannine \interheavy Forst} \\ \bigskip
+    {\color{icnclr}\faEnvelope[regular]} \href{mailto:jannine.novak@gmail.com}{jannine.novak@gmail.com} $|$ 
+    {\color{icnclr}\faIcon{mobile-alt}} \href{tel:1234567890}{437 332 3596} $|$
+    {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/in/jannine-forst/}{linkedin.com/jannine-forst/}
+
+    \item{Bioinformatician | Next Generation Sequencing | Bench and Bioinformatics}
+\end{center}
+
+\section{Computational Skills}
+%===============
+\begin{description}
+    \item Proficient in \textbf{Python}, \textbf{SQL}, and \textbf{R} with experience using \textbf{Apache Beam}
+    \item Experience working with: \textbf{Google Cloud}, \textbf{Amazon Web Services (AWS)}, \textbf{JIRA}, \textbf{Git}
+    \item Experience with databases: \textbf{PostgreSQL}, \textbf{BigQuery}
+    \item Data analysis in unix/linux: \textbf{BWA}, \textbf{Samtools}, \textbf{Picard tools}, \textbf{BLAST}, \textbf{smartPCA}
+\end{description}
+
+\section{Laboratory Skills}
+%===============
+\begin{description}
+    \item \textbf{Next Generation Sequencing}, NGS library construction, target capture, quality control
+    \item DNA/RNA extraction, purification, primer design, PCR, qPCR, Sanger sequencing
+\end{description}
+
+
+\section{Experience}
+\bigskip
+%===================
+\subsection{Software Engineer 2 \normalfont\textit{- BenchSci, Toronto}}
+\subsubsection{Sept 2022 - Jan 2024}
+\begin{description}[leftmargin=5pt]
+    \item Ingestion, management, and maintenance of relational databases. Writing testable and scalable code to facilitate the analysis and visibility of data.
+    \item Daily use of Python, SQL, JIRA, Git, Google Cloud, BigQuery
+\end{description}
+\bigskip
+
+
+\subsection{Bioinformatics Scientist \normalfont\textit{- Arc Bio LLC, Boston}}
+\subsubsection{Jan 2021 - Sept 2022}
+\begin{description}[leftmargin=5pt]
+    \item Development and implementation of necessary bioinformatics analyses towards product launch, proof of
+concept, and prototyping.
+    \item Daily use of Python, SQL, R, JIRA
+\end{description}
+\bigskip
+
+\subsection{Research Scientist \normalfont\textit{- Arc Bio LLC, California}}
+\subsubsection{Jan 2019 - Dec 2020}
+\begin{description}[leftmargin=5pt]
+    \item Assay research and development for next generation sequencing of infectious diseases.
+    \item Daily application of DNA/RNA extraction, cDNA synthesis, NGS method development, target capture, Unix/linux, NGS analysis tools, Python, R
+\end{description}
+\bigskip
+
+\subsection{Postdoctoral Scholar \normalfont\textit{- University of California, Santa Cruz}}
+\subsubsection{Jan 2017 - Jan 2019}
+\begin{description}[leftmargin=5pt]
+    \item Population genetics of Machu Picchu.
+    \item Daily application of ancient DNA extraction to NGS, target capture, data analysis, Unix/Linux, NGS analysis tools, Python
+\end{description}
+\bigskip
+
+\subsection{Postdoctoral Scholar \normalfont\textit{- University of Manchester, UK}}
+\subsubsection{Jan 2015 - Nov 2016}
+\begin{description}[leftmargin=5pt]
+    \item The adaptation of cereals to new environments, establishment of agriculture in Europe.
+    \item Daily application of ancient charred DNA extraction optimization, next generation sequencing, data analysis, Unix/Linux, NGS analysis tools
+\end{description}
+
+
+\section{Education}
+\bigskip
+%==============
+\subsection{University of Manchester, UK $|$ {\normalfont\textit{PhD in Paleogenetics} \hfill 2015}}
+\begin{description}[leftmargin=5pt]
+    \item Detecting and sequencing Mycobacterium tuberculosis ancient DNA from archaeological remains with Prof Terry
+Brown
+\end{description}
+
+\subsection{University of Toronto, Canada $|$ {\normalfont\textit{BSc in Archaeology and Genetics} \hfill 2011}}
+\bigskip
+\bigskip
+
+
+
+\section{Publications}
+
+\nocite{*}
+\printbibliography[heading=none]
+\vspace{-5pt}
+
+
+
+%=================
+
+\end{document}
