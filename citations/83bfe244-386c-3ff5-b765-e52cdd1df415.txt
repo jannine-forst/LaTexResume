@@ -1,0 +1,15 @@
+@article{83bfe244-386c-3ff5-b765-e52cdd1df415,
+ ISSN = {00040843},
+ URL = {https://www.jstor.org/stable/26387311},
+ abstract = {The Franklin expedition set sail in 1845 in search of the Northwest Passage through the Canadian Arctic. During the first winter in the Arctic, three crewmen died of unknown causes. In the 1980s, Dr. Owen Beattie and his colleagues conducted autopsies, which indicated that all three may have suffered from tuberculosis at the time of death. In the present study, a bone sample from one of these individuals, Private William Braine, was analyzed for ancient DNA belonging to Mycobacterium tuberculosis. Tests based on both the polymerase chain reaction and next-generation sequencing were carried out. The results show that it is unlikely that tuberculosis contributed directly to his death. L’expédition de Franklin a dressé les voiles en 1845, à la recherche du passage du Nord-Ouest, dans l’Arctique canadien. Pendant leur premier hiver dans l’Arctique, trois membres de l’équipe sont morts de causes inconnues. Dans les années 1980, le Dr Owen Beattie et ses collègues ont réalisé des autopsies, et celles-ci ont permis de constater que les trois hommes en question souffraient peut-être de tuberculose au moment de leur mort. Dans la présente étude, un échantillon d’os de l’un de ces hommes, soit le soldat William Braine, a été analysé afin d’en prélever l’ADN ancien appartenant au Mycobacterium tuberculosis. Des tests basés sur la réaction en chaîne de la polymérase et le séquençage de nouvelle génération ont été effectués. Selon les résultats, il est peu probable que la tuberculose ait entraîné directement la mort de ce soldat.},
+ author = {Jannine Forst and Terence A. Brown},
+ journal = {Arctic},
+ number = {4},
+ pages = {381--388},
+ publisher = {Arctic Institute of North America},
+ title = {A Case Study: Was Private William Braine of the 1845 Franklin Expedition a Victim of Tuberculosis?},
+ urldate = {2024-01-13},
+ volume = {70},
+ year = {2017}
+}
+
