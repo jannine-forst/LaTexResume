@@ -23,8 +23,7 @@ right=2.5cm
 
 \usepackage{enumitem}
 \setlist[itemize]{
-    noitemsep,
-    left=0pt..1.5em
+    noitemsep
 }
 \setlist[description]{itemsep=0pt}
 \setlist[enumerate]{align=left}
@@ -73,11 +72,9 @@ right=2.5cm
 % \cfoot{\color{darkgray} Jannine Forst R\'esum\'e -- Page \thepage{} of \totalpages}
 \cfoot{\color{darkgray} Jannine Forst -- Page \thepage{} of \totalpages}
 
-\usepackage[backend=biber, natbib,  citestyle=authoryear,style=apa,sorting=none,url=true,giveninits=true,isbn=false,eprint=false,
+\usepackage[backend=biber, natbib,  citestyle=authoryear,style=apa,sorting=none,url=false,giveninits=true,isbn=false,eprint=false,
 uniquename=false,maxbibnames=20]{biblatex}
-
 \setlength\bibitemsep{\baselineskip}
-
 \addbibresource{publications.bib}
 
 
@@ -85,18 +82,22 @@ uniquename=false,maxbibnames=20]{biblatex}
 
 %== HEADER ==%
 \begin{center}
-    {\fontsize{36}{36}\selectfont\interthin Jannine \interheavy Forst} \\ \bigskip
+    {\fontsize{36}{36}\selectfont\intermedium Jannine Forst} \\ \bigskip
     {\color{icnclr}\faEnvelope[regular]} \href{mailto:jannine.novak@gmail.com}{jannine.novak@gmail.com} $|$ 
     {\color{icnclr}\faIcon{mobile-alt}} \href{tel:1234567890}{437 332 3596} $|$
-    {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/in/jannine-forst/}{linkedin.com/jannine-forst/}
+    \href{https://www.linkedin.com/in/jannine-forst/}{\color{icnclr}\faLinkedin} 
+    \href{https://www.linkedin.com/in/jannine-forst/} {LinkedIn}
+    % \href{https://github.com/bioforst}
+    % {\color{icnclr}\faGithub} \href{https://github.com/bioforst} {Github}
+    
 
-    \item{Bioinformatician | Next Generation Sequencing | Bench and Bioinformatics}
+    \item{Bioinformatician | Next Generation Sequencing | Data Science}
 \end{center}
 
 \section{Computational Skills}
 %===============
 \begin{description}
-    \item Proficient in \textbf{Python}, \textbf{SQL}, and \textbf{R} with experience using \textbf{Apache Beam}
+    \item Proficient in \textbf{Python}, \textbf{SQL}, \textbf{R}, \textbf{RegEx}, \textbf{Apache Beam}
     \item Experience working with: \textbf{Google Cloud}, \textbf{Amazon Web Services (AWS)}, \textbf{JIRA}, \textbf{Git}
     \item Experience with databases: \textbf{PostgreSQL}, \textbf{BigQuery}
     \item Data analysis in unix/linux: \textbf{BWA}, \textbf{Samtools}, \textbf{Picard tools}, \textbf{BLAST}, \textbf{smartPCA}
@@ -113,46 +114,47 @@ uniquename=false,maxbibnames=20]{biblatex}
 \section{Experience}
 \bigskip
 %===================
-\subsection{Software Engineer 2 \normalfont\textit{- BenchSci, Toronto}}
+\subsection{Software Engineer 2 - Bioinformatics \normalfont\textit{- BenchSci, Toronto}}
 \subsubsection{Sept 2022 - Jan 2024}
-\begin{description}[leftmargin=5pt]
-    \item Ingestion, management, and maintenance of relational databases. Writing testable and scalable code to facilitate the analysis and visibility of data.
-    \item Daily use of Python, SQL, JIRA, Git, Google Cloud, BigQuery
-\end{description}
+\begin{itemize}
+    \item Ingestion, management, and maintenance of relational databases as well as ETL pipelines spanning diseases, species, chemicals, and drugs.
+    \item Writing testable and scalable code to facilitate the analysis and visibility of data.
+    \item Daily use of Python, SQL, RegEx, Apache Beam, JIRA, Git, Google Cloud, BigQuery
+\end{itemize}
 \bigskip
 
 
 \subsection{Bioinformatics Scientist \normalfont\textit{- Arc Bio LLC, Boston}}
 \subsubsection{Jan 2021 - Sept 2022}
-\begin{description}[leftmargin=5pt]
+\begin{itemize}
     \item Development and implementation of necessary bioinformatics analyses towards product launch, proof of
 concept, and prototyping.
-    \item Daily use of Python, SQL, R, JIRA
-\end{description}
+    \item Daily use of Python, SQL, R, RegEx, JIRA, AWS
+\end{itemize}
 \bigskip
 
 \subsection{Research Scientist \normalfont\textit{- Arc Bio LLC, California}}
 \subsubsection{Jan 2019 - Dec 2020}
-\begin{description}[leftmargin=5pt]
+\begin{itemize}
     \item Assay research and development for next generation sequencing of infectious diseases.
-    \item Daily application of DNA/RNA extraction, cDNA synthesis, NGS method development, target capture, Unix/linux, NGS analysis tools, Python, R
-\end{description}
+    \item Daily application of DNA/RNA extraction, cDNA synthesis, NGS method development, target capture, Unix/linux, NGS analysis tools, Python, RegEx, R
+\end{itemize}
 \bigskip
 
 \subsection{Postdoctoral Scholar \normalfont\textit{- University of California, Santa Cruz}}
 \subsubsection{Jan 2017 - Jan 2019}
-\begin{description}[leftmargin=5pt]
+\begin{itemize}
     \item Population genetics of Machu Picchu.
     \item Daily application of ancient DNA extraction to NGS, target capture, data analysis, Unix/Linux, NGS analysis tools, Python
-\end{description}
+\end{itemize}
 \bigskip
 
 \subsection{Postdoctoral Scholar \normalfont\textit{- University of Manchester, UK}}
 \subsubsection{Jan 2015 - Nov 2016}
-\begin{description}[leftmargin=5pt]
+\begin{itemize}
     \item The adaptation of cereals to new environments, establishment of agriculture in Europe.
-    \item Daily application of ancient charred DNA extraction optimization, next generation sequencing, data analysis, Unix/Linux, NGS analysis tools
-\end{description}
+    \item Daily application of ancient charred DNA extraction optimization, NGS, data analysis, Unix/Linux, NGS analysis tools
+\end{itemize}
 
 
 \section{Education}
@@ -173,6 +175,7 @@ Brown
 \section{Publications}
 
 \nocite{*}
+\setlength{\bibhang}{0pt}
 \printbibliography[heading=none]
 \vspace{-5pt}
 
